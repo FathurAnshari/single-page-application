@@ -34,7 +34,9 @@ const QuoteForm = (props) => {
     <Fragment>
       <Prompt
         when={isEntering}
-        message="Are you sure want to leave this page?, all your progress will be lost"
+        message={(location) =>
+          "Are you sure want to leave this page?, all your progress will be lost"
+        }
       />
       <Card>
         <form
