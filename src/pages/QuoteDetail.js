@@ -20,7 +20,7 @@ const QuoteDetail = () => {
 
   useEffect(() => {
     sendRequest(quoteId);
-  }, [sendRequest]);
+  }, [sendRequest, quoteId]);
 
   if (status === "pending") {
     return (
